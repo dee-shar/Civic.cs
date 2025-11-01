@@ -18,6 +18,7 @@ namespace CivicApi
             var response = await httpClient.GetAsync($"{apiUrl}/status");
             return await response.Content.ReadAsStringAsync();
         }
+        
         public async Task<string> SearchRace(
             string startDate,
             string endDate, 
